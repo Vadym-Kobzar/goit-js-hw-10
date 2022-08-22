@@ -64,7 +64,7 @@ function renderCountryInfo(country) {
                 height="60">${name.official}</h1>
                 <p><span>Capital: </span>${capital}</p>
                 <p><span>Population: </span>${population.toLocaleString(
-                  'pl-PL',
+                  'ua-UA',
                   {
                     useGrouping: 'true',
                     minimumFractionDigits: '0',
