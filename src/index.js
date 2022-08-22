@@ -63,11 +63,14 @@ function renderCountryInfo(country) {
                 width="100"
                 height="60">${name.official}</h1>
                 <p><span>Capital: </span>${capital}</p>
-                <p><span>Population: </span>${population.toLocaleString({
-                  useGrouping: 'true',
-                  minimumFractionDigits: '0',
-                  maxFractionDigits: '2',
-                })}</p>
+                <p><span>Population: </span>${population.toLocaleString(
+                  'en-IN',
+                  {
+                    useGrouping: 'true',
+                    minimumFractionDigits: '0',
+                    maxFractionDigits: '2',
+                  }
+                )}</p>
             <p><span>Languages: </span>${Object.values(languages)}</p>`;
     })
     .join('');
